@@ -2,13 +2,12 @@
 Encontre o maior valor 
 Encontre o menor valor 
 Calcule a média dos números lidos*/
-
 using System;
-namespace atividade7
+namespace exercicio7
 {
-    class Program
+    public class Program
     {
-        static void Main (string[] args)
+        public static void Main (string[] args)
         {
             int a = 0;
             int b = 0;
@@ -17,11 +16,11 @@ namespace atividade7
             int e = 0;
             int maior = 0;
             int menor = 0;
+            float media = 0;
             Console.WriteLine("Entre como o valor 1: ");
             a = int.Parse(Console.ReadLine());
             Console.WriteLine("Entre como o valor 2: ");
             b = int.Parse(Console.ReadLine());
-            
             if(a > b)
             {
                 maior = a;
@@ -30,7 +29,7 @@ namespace atividade7
             {
                 maior = b;
                 menor = a;
-            }Console.WriteLine("maior: "+maior+" "+"menor: "+menor);
+            }
             Console.WriteLine("Entre como o valor 3: ");
             c =  int.Parse(Console.ReadLine());
             if(c > maior)
@@ -39,7 +38,7 @@ namespace atividade7
             }else if(c < menor)
             {
                 menor = c;
-            }Console.WriteLine("maior: "+maior+" "+"menor: "+menor);
+            }
             Console.WriteLine("Entre como o valor 4: ");
             d =  int.Parse(Console.ReadLine());
             if(d > maior)
@@ -48,7 +47,7 @@ namespace atividade7
             }else if(d < menor)
             {
                 menor = d;
-            }Console.WriteLine("maior: "+maior+" "+"menor: "+menor);
+            }
             Console.WriteLine("Entre como o valor 5: ");
             e =  int.Parse(Console.ReadLine());
             if(e > maior)
@@ -58,7 +57,8 @@ namespace atividade7
             {
                 menor = e;
             }
-            Console.WriteLine("maior: "+maior+" "+"menor: "+menor);
+            media = (maior+menor)/2;
+            Console.WriteLine("maior: "+maior+" "+"menor: "+menor+" media: "+media);
         }
     }
 }

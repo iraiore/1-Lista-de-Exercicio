@@ -1,17 +1,14 @@
-/*
-Desenvolva um algoritmo que:
+/*Desenvolva um algoritmo que:
 Leia 4 (quatro) números; 
 Calcule o quadrado de cada um; 
 Se o valor resultante do quadrado do terceiro for >= 1000, imprima-o e finalize; 
-Caso contrário, imprima os valores lidos e seus respectivos quadrados.mais teste 
-*/
-
+Caso contrário, imprima os valores lidos e seus respectivos quadrados.mais teste */
 using System;
-namespace atividade3
+namespace exercicio3
 {
-    class Program
+    public class Program
     {
-        static void Main (string[] args)
+        public static void Main (string[] args)
         {
             //DECLARAÇÃO DE VARIÁVEIS
             int a = 0;
@@ -36,7 +33,6 @@ namespace atividade3
             b_quad = b*b;
             c_quad = c*c;
             d_quad = d*d;
-
             if (c_quad>=1000)
             {
                 Console.WriteLine("o quadrado do valor 3 é: "+c_quad);
